@@ -1,0 +1,9 @@
+<p>You chose: <%= @user_throw %></p>
+<p>App chose: <%= @app_throw %></p>
+<% if @status == "you lose" %>
+   <%= image_tag "loser.JPG" %>
+   <% elsif @status == "you tied" %>
+   <%= image_tag "tie.jpeg" %>
+   <% else %>
+   <%= image_tag "YouWin2.png" %>
+   <% end %>
